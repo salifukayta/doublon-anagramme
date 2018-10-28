@@ -2,6 +2,8 @@
 
 ## Doublon
 
+### Analyse de l'algorithme
+
 L'algorithme se déroule comme ceci:
 - La lecture de tout le fichier en mémoire, ce qui nous donne une complexité en mémoire de n.
 - Boucle sur la liste pour construit un objet pour chaque element, ce qui fait une complexité de O(n) et une compléxité mémoire n
@@ -10,7 +12,13 @@ L'algorithme se déroule comme ceci:
 
 A la fin de l'algorithme, on se retrouve avec une complexité de O(n ln(n)) et une complexité en mémoire de n * (nombre de mot et leurs index)
 
+### Lancement
+
+### Exemple de résultat affiché à sortie standard
+
 ## Anagrammes
+
+### Analyse de l'algorithme
 
 L'algorithme se déroule comme ceci:
 - La lecture de tout le fichier en mémoire, ce qui nous donne une complexité en mémoire de n.
@@ -21,5 +29,6 @@ L'algorithme se déroule comme ceci:
 
 A la fin de l'algorithme, on se retrouve avec une complexité de O(n ln(n)) et une complexité en mémoire de 2 n * (nombre de mot et leurs index)
 
+### Lancement
 
-
+### Exemple de résultat affiché à sortie standard
