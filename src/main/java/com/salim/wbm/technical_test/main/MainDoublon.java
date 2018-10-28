@@ -34,11 +34,11 @@ public class MainDoublon {
 
 			// Trie de la liste avec l'algorithme du trie rapide O(n ln(n))
 			SortUtils.quickSort(words);
-
-			//Afficher les doublons O(n)
+						
+			// Affichage des doublons O(n)
 			for (int i = 0; i < words.size() - 1; i++) {
 				WordDefault currentWord = words.get(i);
-				// Si un mot est �gale au mot suivant
+				// Si un mot est egale au mot suivant
 				if (currentWord.getText().equals(words.get(i + 1).getText())) {
 					// On afficher les doublons: le mot ainsi que les deux index
 					System.out.println(currentWord.getText() + " => " + currentWord.getInitialIndex() + ", " + words.get(i + 1).getInitialIndex());
