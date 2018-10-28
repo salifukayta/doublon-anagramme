@@ -10,7 +10,7 @@ L'algorithme se déroule comme ceci:
 - applique l'algorithme de trie rapide sur la liste avec une complexité de O(n ln(n))
 - boucle sur la liste et affiche le mot et l'index initial de chaque 2 éléments successives s'ilt ont le même text, la complexité est égale O(n)
 
-A la fin de l'algorithme, on se retrouve avec une complexité de O(n ln(n)) et une complexité en mémoire de n * (nombre de mot et leurs index)
+A la fin de l'algorithme, on se retrouve avec une complexité de O(n ln(n)) et une complexité en mémoire de n (de mot et leurs index)
 
 ### Lancement
 
@@ -27,7 +27,7 @@ L'algorithme se déroule comme ceci:
 - boucle sur la liste et affiche le mot initial et l'index initial de chaque 2 éléments successives s'ilt ont le même text trié, la complexité est égale O(n)
 
 
-A la fin de l'algorithme, on se retrouve avec une complexité de O(n ln(n)) si n > m ou bien O(n m ln(m)) si m > n et une complexité en mémoire de 2 n * (nombre de mot et leurs index)
+A la fin de l'algorithme, on se retrouve avec une complexité de O(n ln(n)) si n > m ou bien O(n m ln(m)) si m > n et une complexité en mémoire de 2 n (de mot et leurs index)
 
 ### Lancement
 
