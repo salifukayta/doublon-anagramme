@@ -29,7 +29,7 @@ public class MainAnagramme {
 			int workIndex = 0;
 			// Construction de la liste des objets en sauvegardant l'index de chaque element et en triant ses caract�res O(n)
 			for (String word : initialLines) {
-				// TODO complexit� ??
+				// TODO complexite
 				// WordSortedCharacters trie les lettres du mot
 				words.add(new WordSortedCharacters(word, workIndex++));
 			}

@@ -12,7 +12,7 @@ public class SortException extends Exception {
 	/**
 	 * The error
 	 */
-	private String msg;
+	private String message;
 
 	/**
 	 * Constructor
@@ -20,7 +20,7 @@ public class SortException extends Exception {
 	 * @param msg
 	 */
 	public SortException(String msg) {
-		this.msg = msg;
+		this.message = msg;
 	}
 	
 	/**
@@ -29,14 +29,14 @@ public class SortException extends Exception {
 	 * @param e
 	 */
 	public SortException(Exception e) {
-		this.msg = e.getMessage();
+		this.message = e.toString();
 	}
 
 	/**
-	 * @return the msg
+	 * @return the message
 	 */
-	public String getMsg() {
-		return msg;
+	public String getMessage() {
+		return message;
 	}
 
 }
