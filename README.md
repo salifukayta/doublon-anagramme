@@ -24,6 +24,15 @@ ou chemin_vers_fichier_log contient le chemin du fichier à traiter. Par exemple
 - > java -cp target/technical-test-0.0.1-SNAPSHOT.jar com.salim.wbm.technical_test.main.MainDoublon "/home/wbm/test/ID_FICHIER.LOG"
 
 ### Exemple de résultat affiché à sortie standard
+```
+BEGIN MainDoublon /home/wbm/test/ID_FICHIER.LOG
+
+1x12@Fu38Xv1 => 897, 898
+f1RiZgi0nrQj => 1344, 1665
+zhsOmCHJSgbz => 6464, 8001
+
+FIN MainDoublon
+```
 
 ## Anagrammes
 
@@ -46,3 +55,13 @@ ou chemin_vers_fichier_log contient le chemin du fichier à traiter. Par exemple
 
 
 ### Exemple de résultat affiché à sortie standard
+```
+BEGIN MainAnagramme /home/wbm/test/ID_FICHIER.LOG
+
+f1RiZgi0nrQj => 1665, f1RiZgi0nrQj => 1344
+MjWy06DQVvjU => 8963, jMWU60DQVvjy => 8962
+1x12@Fu38Xv1 => 897, 1x12@Fu38Xv1 => 898
+zhsOmCHJSgbz => 8001, zhsOmCHJSgbz => 6464
+
+FIN MainAnagramme
+```
