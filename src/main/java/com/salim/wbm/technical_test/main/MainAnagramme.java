@@ -22,7 +22,7 @@ public class MainAnagramme {
 		System.out.println("BEGIN MainAnagramme " + args[0] + "\n");
 
 		try {
-			// Lecture du fichier, chaque ligne est un element de la liste
+			// Lecture du fichier, chaque ligne est un element de la liste, O(n)
 			List<String> initialLines = Files.readAllLines(Paths.get(args[0]), StandardCharsets.UTF_8);
 
 			List<WordSortedCharacters> words = new ArrayList<>();
@@ -36,7 +36,7 @@ public class MainAnagramme {
 			// Trie de la liste avec l'algorithme du trie rapide, O(n ln(n))
 			SortUtils.quickSort(words);
 
-			// Afficher les anagrammes O(n)
+			// Afficher les anagrammes, O(n)
 			for (int i = 0; i < words.size() - 1; i++) {
 				WordSortedCharacters currentWord = words.get(i);
 				// Si un mot, dont les lettres sont triees, est  egale au mot suivant, dont les lettres sont triees

@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 import com.salim.wbm.technical_test.exception.SortException;
 import com.salim.wbm.technical_test.lib.SortUtils;
@@ -22,20 +23,21 @@ public class MainDoublon {
 		System.out.println("BEGIN MainDoublon " + args[0] + "\n");
 
 		try {
-			// Lecture du fichier, chaque ligne est un element de la liste
+			// Lecture du fichier, chaque ligne est un element de la liste, O(n)
 			List<String> initialLines = Files.readAllLines(Paths.get(args[0]), StandardCharsets.UTF_8);
+			Stream<String> streamInitialLines = Files.lines(Paths.get(args[0]), StandardCharsets.UTF_8);
 
 			int workIndex = 0;
 			List<WordDefault> words = new ArrayList<>();
-			// Construction de la liste des objets en sauvegardant l'index de chaque element O(n)
+			// Construction de la liste des objets en sauvegardant l'index de chaque element, O(n)
 			for (String word : initialLines) {
 				words.add(new WordDefault(word, workIndex++));
 			}
 
-			// Trie de la liste avec l'algorithme du trie rapide O(n ln(n))
+			// Trie de la liste avec l'algorithme du trie rapide, O(n ln(n))
 			SortUtils.quickSort(words);
 						
-			// Affichage des doublons O(n)
+			// Affichage des doublons, O(n)
 			for (int i = 0; i < words.size() - 1; i++) {
 				WordDefault currentWord = words.get(i);
 				// Si un mot est egale au mot suivant
