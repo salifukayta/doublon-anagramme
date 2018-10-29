@@ -1,8 +1,8 @@
 # Doublon-Anagramme
 
 ### Compilation
-à la racine du projet, lancer la commande suivante :
-- mvn package: pour compiler le projet dans le dossier target
+à la racine du projet, lancer la commande suivante pour compiler le projet dans le dossier target :
+- > mvn package
 
 ## Doublon
 
