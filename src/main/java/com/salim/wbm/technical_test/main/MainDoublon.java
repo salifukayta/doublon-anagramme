@@ -25,7 +25,6 @@ public class MainDoublon {
 		try {
 			// Lecture du fichier, chaque ligne est un element de la liste, O(n)
 			List<String> initialLines = Files.readAllLines(Paths.get(args[0]), StandardCharsets.UTF_8);
-			Stream<String> streamInitialLines = Files.lines(Paths.get(args[0]), StandardCharsets.UTF_8);
 
 			int workIndex = 0;
 			List<WordDefault> words = new ArrayList<>();
