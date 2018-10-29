@@ -1,5 +1,9 @@
 # Doublon-Anagramme
 
+### Compilation
+à la racine du projet, lancer la commande suivante :
+- mvn package: pour compiler le projet dans le dossier target
+
 ## Doublon
 
 ### Analyse de l'algorithme
@@ -13,6 +17,10 @@ L'algorithme se déroule comme ceci:
 A la fin de l'algorithme, on se retrouve avec une complexité de O(n ln(n)) et une complexité en mémoire de n (de mot et leurs index)
 
 ### Lancement
+Après la compilation, se mettre à la racine du projet et lancer la commande suivante :
+- > java -cp target/technical-test-0.0.1-SNAPSHOT.jar com.salim.wbm.technical_test.main.MainDoublon chemin_vers_fichier_log
+ou chemin_vers_fichier_log contient le chemin du fichier à traiter. Par exemple:
+- > java -cp target/technical-test-0.0.1-SNAPSHOT.jar com.salim.wbm.technical_test.main.MainDoublon "/home/wbm/test/ID_FICHIER.LOG"
 
 ### Exemple de résultat affiché à sortie standard
 
@@ -26,9 +34,13 @@ L'algorithme se déroule comme ceci:
 - appliquer l'algorithme de trie rapide sur la liste avec une complexité de O(n ln(n))
 - boucler sur la liste et affiche le mot initial et l'index initial de chaque 2 éléments successives s'ilt ont le même text trié, la complexité est égale O(n)
 
-
 A la fin de l'algorithme, on se retrouve avec une complexité de O(n (log (n) + m log (m)) )
 
 ### Lancement
+Après la compilation, se mettre à la racine du projet et lancer la commande suivante :
+- > java -cp target/technical-test-0.0.1-SNAPSHOT.jar com.salim.wbm.technical_test.main.MainAnagramme chemin_vers_fichier_log
+ou chemin_vers_fichier_log contient le chemin du fichier à traiter. Par exemple:
+- > java -cp target/technical-test-0.0.1-SNAPSHOT.jar com.salim.wbm.technical_test.main.MainAnagramme "/home/wbm/test/ID_FICHIER.LOG"
+
 
 ### Exemple de résultat affiché à sortie standard
