@@ -33,7 +33,7 @@ public class WordSortedCharacters implements Word {
 	public WordSortedCharacters(String text, int initialIndex) {
 		this.initialText = text;
 		char[] chars = text.toCharArray();
-		// FIXME Complexit� ? c'est quel algo de trie utilis� ici ?
+		// Performs a recursive modified quicksort, O(m ln(m))
 		Arrays.sort(chars);
 		this.sortedText = new String(chars);
 		this.initialIndex = initialIndex;
